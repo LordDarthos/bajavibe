@@ -1,0 +1,43 @@
+{
+    "name": "mi-proyecto",
+    "private": true,
+    "workspaces": [
+      "client",
+      "server"
+    ],
+    "scripts": {
+      "prepare": "husky install",
+      "lint": "eslint . --ext .ts,.tsx",
+      "lint:style": "stylelint \"**/*.{css,scss}\"",
+      "format": "prettier --write .",
+      "commit": "cz"
+    },
+    "lint-staged": {
+      "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+      "*.{css,scss}": ["stylelint --fix"],
+      "*.{json,md}": ["prettier --write"]
+    },
+    "devDependencies": {
+      "@commitlint/cli": "^18.0.0",
+      "@commitlint/config-conventional": "^18.0.0",
+      "@typescript-eslint/eslint-plugin": "^6.0.0",
+      "@typescript-eslint/parser": "^6.0.0",
+      "cz-conventional-changelog": "^3.3.0",
+      "eslint": "^8.0.0",
+      "eslint-config-prettier": "^9.0.0",
+      "eslint-plugin-prettier": "^5.0.0",
+      "eslint-plugin-react": "^7.0.0",
+      "eslint-plugin-react-hooks": "^4.0.0",
+      "husky": "^9.0.0",
+      "lint-staged": "^15.0.0",
+      "prettier": "^3.0.0",
+      "stylelint": "^16.0.0",
+      "stylelint-config-standard": "^36.0.0"
+    },
+    "config": {
+      "commitizen": {
+        "path": "./node_modules/cz-conventional-changelog"
+      }
+    }
+  }
+  
