@@ -1,0 +1,42 @@
+# Node
+node_modules/
+*.log
+npm-debug.log*
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Vite cache
+.vite/
+
+# Coverage
+coverage/
+
+# Env
+.env
+.env.*.local
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# MacOS
+.DS_Store
+
+# Husky
+.husky/_/
+
+# Lint-staged temp files
+*.lintstaged*
+
+# Optional: si usas Yarn o pnpm
+.pnpm-debug.log
+.yarn/
+.pnp.*
+
+# VSCode launch config (si no es compartido)
+.vscode/launch.json
